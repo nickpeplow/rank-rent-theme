@@ -28,7 +28,7 @@ define('THEME_IMAGE_URL', THEME_URL . '/assets/images');
 define('THEME_ICON_URL', THEME_URL . '/assets/icons');
 
 // Define path constants for file includes and templates
-define('THEME_INC_PATH', THEME_PATH . '/includes');
+define('THEME_INC_PATH', THEME_PATH . '/inc');
 define('THEME_TEMPLATE_PATH', THEME_PATH . '/templates');
 
 // Define URL path for any custom fonts or icons, if applicable
@@ -246,27 +246,27 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+require THEME_INC_PATH . '/custom-header.php';
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require THEME_INC_PATH . '/template-tags.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+require THEME_INC_PATH . '/template-functions.php';
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+require THEME_INC_PATH . '/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+	require THEME_INC_PATH . '/jetpack.php';
 }
 
