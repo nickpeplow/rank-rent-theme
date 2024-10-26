@@ -161,7 +161,7 @@ const footerYear = document.getElementById('full-year');
 footerYear.textContent = new Date().getFullYear();
 
 // ================ Testimonials Slider
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   $('#testimonials-slider').owlCarousel({
     loop: true,
     margin: 16,

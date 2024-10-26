@@ -225,7 +225,7 @@ function theme_enqueue_scripts() {
     wp_enqueue_script(
         'owl-carousel',
         'https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js',
-        array('jquery-cdn'), // jQuery dependency
+        array('jquery'), // jQuery dependency
         '2.3.4',
         true // Load in footer
     );
@@ -234,7 +234,7 @@ function theme_enqueue_scripts() {
     wp_enqueue_script(
         'theme-custom-js',
         THEME_JS_URL . '/app.js',
-        array('jquery-cdn'), // Add dependencies if necessary
+        array('jquery'), // Add dependencies if necessary
         null,                // Version (optional)
         true                 // Load in footer
     );
