@@ -241,6 +241,11 @@ function theme_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 
+/**
+ * Include Rank & Rent functions
+ */
+require_once THEME_PATH . '/manager/rr-site-functions.php';
+require_once THEME_PATH . '/manager/rr-setup-functions.php';
 
 
 /**
