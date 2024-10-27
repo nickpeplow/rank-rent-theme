@@ -47,7 +47,7 @@ function rr_render_settings_page() {
                 $value = get_option($field_id);
                 ?>
                 <div class="form-field">
-                    <label for="<?php echo esc_attr($field_id); ?>"><?php echo esc_html($field['label']); ?></label>
+                    <label for="<?php echo esc_attr($field_id); ?>"><?php echo esc_html($field['label']); ?> [<?php echo esc_html($field_id); ?>]</label>
                     <br>
                     <?php if ($field['type'] === 'textarea'): ?>
                         <textarea id="<?php echo esc_attr($field_id); ?>" name="<?php echo esc_attr($field_id); ?>" rows="4" cols="50"><?php echo esc_textarea($value); ?></textarea>
