@@ -13,26 +13,26 @@
  * @package Rank_Rent_Static
  */
 
-get_header();
+get_header('default');
 ?>
 
 <main id="primary" class="site-main">
 
-	<?php
+    <?php
 	while (have_posts()) :
 		the_post();
-
-		//get_template_part( 'template-parts/content', 'page' );
-		get_template_part('template-parts/homepage', 'hero');
-		get_template_part('template-parts/homepage', 'about');
-		get_template_part('template-parts/homepage', 'services');
-		get_template_part('template-parts/homepage', 'testimonials');
-		get_template_part('template-parts/homepage', 'locations');
-		get_template_part('template-parts/homepage', 'features');
-		get_template_part('template-parts/homepage', 'pricing');
-		get_template_part('template-parts/homepage', 'call-to-action');
-		get_template_part('template-parts/homepage', 'statistics');
-
+	?>
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <div class="lg:col-span-8 bg-blue-500 p-4">
+                <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
+            </div>
+            <div class="lg:col-span-4 bg-green-500 p-4">
+                <?php get_sidebar(); ?>
+            </div>
+        </div>
+    </div>
+    <?php
 		// If comments are open or we have at least one comment, load up the comment template.
 		if (comments_open() || get_comments_number()) :
 			comments_template();
