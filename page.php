@@ -13,7 +13,7 @@
  * @package Rank_Rent_Static
  */
 
-get_header('default');
+get_header();
 ?>
 
 <main id="primary" class="site-main">
@@ -22,14 +22,29 @@ get_header('default');
 	while (have_posts()) :
 		the_post();
 	?>
-    <div class="container mx-auto px-4">
+    <?php get_template_part( 'template-parts/default', 'hero' ); ?>
+    <div class="container mx-auto px-4 py-8 lg:py-14">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
             <div class="lg:col-span-8 bg-blue-500 p-4">
                 <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
             </div>
             <div class="lg:col-span-4 bg-green-500 p-4">
-                <?php get_sidebar(); ?>
-            </div>
+                <h3 class="text-xl mb-2 font-semibold lg:text-2xl lg:mb-3">
+                Lorem ipsum dolor sit amet consectetur.
+                </h3>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aut perspiciatis
+                reprehenderit cumque molestiae inventore. Nostrum ratione voluptatem minus velit
+                amet molestiae debitis delectus consequatur sequi? Laborum architecto doloribus
+                placeat impedit magni, dignissimos in deleniti provident explicabo rem officia
+                quibusdam?
+                </p>
+                <ul class="mt-4 list-disc list-inside">
+                    <li>No hidden fees guarantee</li>
+                    <li>Best price guarantee</li>
+                    <li>Insurance work acceptance</li>
+                </ul>
+          </div>
         </div>
     </div>
     <?php
@@ -44,5 +59,4 @@ get_header('default');
 </main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
