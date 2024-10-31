@@ -35,7 +35,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-
+:root {
+	--primary: #2d3e61;
+	--secondary: #39476b;
+	--overlay: rgba(57, 71, 107, 0.7);
+	--tertiary: #ebf4fb;
+	--orange: #f26101;
+	--yellow: #facc15;
+	--red: #ed3f3f;
+	--green: #06b66f;
+	--black: #212121;
+	--white: #ffffff;
+	--gray: #f6f6f6;
+	--gray-100: #f3f4f6;
+	--gray-200: #e5e7eb;
+	--gray-400: #d6d6d6;
+  }
 
 /* Captions
 --------------------------------------------- */
