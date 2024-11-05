@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aberdeen Locksmith",
+  "legalName": "Aberdeen Locksmith Ltd",
+  "url": "https://www.yourdomain.com",
+  "logo": "https://www.yourdomain.com/images/logo.jpg",
+  "foundingDate": "1998",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "John Doe"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+441125125125",
+      "contactType": "emergency",
+      "availableLanguage": ["English"],
+      "areaServed": "GB"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/aberdeenlocksmith",
+    "https://twitter.com/aberdeenlock"
+  ]
+}

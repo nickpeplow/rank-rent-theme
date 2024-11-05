@@ -268,6 +268,12 @@ require THEME_INC_PATH . '/template-functions.php';
  */
 require THEME_INC_PATH . '/customizer.php';
 
+// Post type
+include THEME_INC_PATH . '/custom-post-types.php';
+
+// custom Hooks
+include THEME_INC_PATH . '/custom-hooks.php';
+
 /**
  * Load Jetpack compatibility file.
  */
@@ -275,3 +281,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require THEME_INC_PATH . '/jetpack.php';
 }
 
+// Load schema
+function load_schema_in_header() {
+    $schema_files = [
+        'LocalBusiness' => get_template_directory() . '/schemas/LocalBusiness.json',
+        'Review' => get_template_directory() . '/schemas/Review.json',
+        'FAQ' => get_template_directory() . '/schemas/FAQ.json',
+        'Organization' => get_template_directory() . '/schemas/Organization.json',
+        'Service' => get_template_directory() . '/schemas/Service.json',
+        'SpecialAnnouncement' => get_template_directory() . '/schemas/SpecialAnnouncement.json',
+        'WebSite' => get_template_directory() . '/schemas/WebSite.json',
+    ];
+
+    foreach ($schema_files as $schema_file) {
+        if (file_exists($schema_file)) {
+            $schema_content = file_get_contents($schema_file);
+            echo '<script type="application/ld+json">' . $schema_content . '</script>';
+        }
+    }
+}
+add_action('wp_head', 'load_schema_in_header');

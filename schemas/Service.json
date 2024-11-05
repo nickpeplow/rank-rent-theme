@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Aberdeen Locksmith",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Locksmith Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Emergency Lockout Service",
+          "description": "24/7 emergency lockout service for homes and businesses"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Lock Replacement",
+          "description": "Professional lock replacement and upgrade services"
+        }
+      }
+    ]
+  }
+}

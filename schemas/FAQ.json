@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a locksmith cost in Aberdeen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our locksmith services start from £29 for basic lockout services. Emergency calls may incur additional charges. All prices are transparent with no hidden fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide 24/7 emergency service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide 24/7 emergency locksmith services with a typical response time of 30 minutes in the Aberdeen area."
+      }
+    }
+  ]
+}

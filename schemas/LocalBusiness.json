@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "Locksmith"],
+  "name": "Aberdeen Locksmith",
+  "image": "https://www.yourdomain.com/images/logo.jpg",
+  "priceRange": "££",
+  "@id": "https://www.yourdomain.com",
+  "url": "https://www.yourdomain.com",
+  "telephone": "+441125125125",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "241 Badminton Road",
+    "addressLocality": "Aberdeen",
+    "postalCode": "BS166NR",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 57.1497,
+    "longitude": -2.0943
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 57.1497,
+        "longitude": -2.0943
+      },
+      "geoRadius": "30000"
+    }
+  ]
+}

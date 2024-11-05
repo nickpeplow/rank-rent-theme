@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SpecialAnnouncement",
+  "name": "24/7 Emergency Service Available During Holidays",
+  "category": "https://schema.org/BusinessService",
+  "text": "We remain open 24/7 for all emergency locksmith services during the holiday period",
+  "datePosted": "2024-12-20",
+  "expires": "2025-01-05",
+  "serviceType": "Emergency Locksmith Service"
+}
