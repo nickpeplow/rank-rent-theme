@@ -23,12 +23,12 @@ get_header();
 		the_post();
 	?>
     <?php get_template_part( 'template-parts/default', 'hero' ); ?>
-    <div class="container mx-auto px-4 py-8 lg:py-14">
+    <div class="wrapper mx-auto px-4 py-8 lg:py-14">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
-            <div class="lg:col-span-8 p-4">
+            <div class="lg:col-span-8 py-4">
                 <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
             </div>
-            <div class="lg:col-span-4 p-4">
+            <div class="lg:col-span-4 py-4">
 
                 <h3 class="text-xl mb-2 font-semibold lg:text-2xl lg:mb-3">
                 Search
